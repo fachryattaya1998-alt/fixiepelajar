@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fixie Pelajar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         HEADER
+    ========================================= -->
+
+    <header>
+
+        <h1>🚲 FIXIE PELAJAR</h1>
+
+        <p>
+            Simulasi Perakitan Sepeda Fixie
+        </p>
+
+    </header>
+
+
+    <main>
+
+        <!-- ========================================
+             INTRO
+        ========================================= -->
+
+        <section class="intro">
+
+            <h2>
+                Rakit Sepeda Fixie
+            </h2>
+
+            <p>
+                Pilih sparepart untuk membuat rakitan
+                sepeda fixie sesuai kebutuhan dan budget kamu.
+            </p>
+
+        </section>
+
+
+        <!-- ========================================
+             SPAREPART
+        ========================================= -->
+
+        <section>
+
+            <h2>
+                🔧 Pilih Sparepart
+            </h2>
+
+            <p class="info-pilih">
+                💡 Setiap jenis komponen hanya dapat dipilih satu kali.
+            </p>
+
+
+            <div class="parts">
+
+
+                <!-- ==================================
+                     1. FRAME
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/frame.jpg"
+                        alt="Frame"
+                    >
+
+                    <h3>
+                        Frame
+                    </h3>
+
+                    <p>
+                        Rp2.700.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Frame"
+                        onclick="pilihPart('Frame', 2700000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     2. FORK
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/fork.jpg"
+                        alt="Fork"
+                    >
+
+                    <h3>
+                        Fork
+                    </h3>
+
+                    <p>
+                        Rp799.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Fork"
+                        onclick="pilihPart('Fork', 799000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     3. HEADSET
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/headset.jpg"
+                        alt="Headset"
+                    >
+
+                    <h3>
+                        Headset
+                    </h3>
+
+                    <p>
+                        Rp120.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Headset"
+                        onclick="pilihPart('Headset', 120000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     4. WHEELSET
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/wheelset.jpg"
+                        alt="Wheelset"
+                    >
+
+                    <h3>
+                        Wheelset
+                    </h3>
+
+                    <p>
+                        Rp650.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Wheelset"
+                        onclick="pilihPart('Wheelset', 650000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     5. BAN
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/ban.jpg"
+                        alt="Ban"
+                    >
+
+                    <h3>
+                        Ban
+                    </h3>
+
+                    <p>
+                        Rp180.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Ban"
+                        onclick="pilihPart('Ban', 180000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     6. STEM
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/stem.jpg"
+                        alt="Stem"
+                    >
+
+                    <h3>
+                        Stem
+                    </h3>
+
+                    <p>
+                        Rp150.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Stem"
+                        onclick="pilihPart('Stem', 150000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     7. STANG / BAR
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/stang.jpg"
+                        alt="Stang"
+                    >
+
+                    <h3>
+                        Stang / Bar
+                    </h3>
+
+                    <p>
+                        Rp200.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Stang / Bar"
+                        onclick="pilihPart('Stang / Bar', 200000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     8. SADEL
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/sadel.jpg"
+                        alt="Sadel"
+                    >
+
+                    <h3>
+                        Sadel
+                    </h3>
+
+                    <p>
+                        Rp120.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Sadel"
+                        onclick="pilihPart('Sadel', 120000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     9. SEATPOST
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/seatpost.jpg"
+                        alt="Seatpost"
+                    >
+
+                    <h3>
+                        Seatpost
+                    </h3>
+
+                    <p>
+                        Rp130.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Seatpost"
+                        onclick="pilihPart('Seatpost', 130000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     10. HANDGRIP
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/handgrip.jpg"
+                        alt="Handgrip"
+                    >
+
+                    <h3>
+                        Handgrip
+                    </h3>
+
+                    <p>
+                        Rp75.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Handgrip"
+                        onclick="pilihPart('Handgrip', 75000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     11. CRANKSET
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/Crankset.jpg"
+                        alt="Crankset"
+                    >
+
+                    <h3>
+                        Crankset
+                    </h3>
+
+                    <p>
+                        Rp450.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Crankset"
+                        onclick="pilihPart('Crankset', 450000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     12. BOTTOM BRACKET
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/Bottom-Bracket.jpg"
+                        alt="Bottom Bracket"
+                    >
+
+                    <h3>
+                        Bottom Bracket
+                    </h3>
+
+                    <p>
+                        Rp150.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Bottom Bracket"
+                        onclick="pilihPart('Bottom Bracket', 150000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     13. CHAIN
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/Chain.jpg"
+                        alt="Chain"
+                    >
+
+                    <h3>
+                        Chain
+                    </h3>
+
+                    <p>
+                        Rp100.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Chain"
+                        onclick="pilihPart('Chain', 100000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     14. COG
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/Cog.jpg"
+                        alt="Cog"
+                    >
+
+                    <h3>
+                        Cog
+                    </h3>
+
+                    <p>
+                        Rp150.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Cog"
+                        onclick="pilihPart('Cog', 150000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     15. PEDAL
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/Pedal.jpg"
+                        alt="Pedal"
+                    >
+
+                    <h3>
+                        Pedal
+                    </h3>
+
+                    <p>
+                        Rp180.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Pedal"
+                        onclick="pilihPart('Pedal', 180000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     16. CHAINRING
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/Chainring.jpg"
+                        alt="Chainring"
+                    >
+
+                    <h3>
+                        Chainring
+                    </h3>
+
+                    <p>
+                        Rp200.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Chainring"
+                        onclick="pilihPart('Chainring', 200000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     17. HUB DEPAN
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/front-hub.jpg"
+                        alt="Hub Depan"
+                    >
+
+                    <h3>
+                        Hub Depan
+                    </h3>
+
+                    <p>
+                        Rp250.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Hub Depan"
+                        onclick="pilihPart('Hub Depan', 250000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     18. HUB BELAKANG
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/rear-hub.jpg"
+                        alt="Hub Belakang"
+                    >
+
+                    <h3>
+                        Hub Belakang
+                    </h3>
+
+                    <p>
+                        Rp350.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Hub Belakang"
+                        onclick="pilihPart('Hub Belakang', 350000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     19. REM DEPAN
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/front-brake.jpg"
+                        alt="Rem Depan"
+                    >
+
+                    <h3>
+                        Rem Depan
+                    </h3>
+
+                    <p>
+                        Rp175.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Rem Depan"
+                        onclick="pilihPart('Rem Depan', 175000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+                <!-- ==================================
+                     20. BEL SEPEDA
+                ================================== -->
+
+                <div class="card">
+
+                    <img
+                        src="images/bell.jpg"
+                        alt="Bel Sepeda"
+                    >
+
+                    <h3>
+                        Bel Sepeda
+                    </h3>
+
+                    <p>
+                        Rp50.000
+                    </p>
+
+                    <button
+                        class="btn-pilih"
+                        data-part="Bel Sepeda"
+                        onclick="pilihPart('Bel Sepeda', 50000)"
+                    >
+                        Pilih
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             BUDGET
+        ========================================= -->
+
+        <section class="budget">
+
+            <h2>
+                💰 Budget Pelajar
+            </h2>
+
+            <p>
+                Masukkan budget yang kamu punya
+                untuk merakit sepeda fixie.
+            </p>
+
+
+            <div class="budget-input">
+
+                <label for="budgetInput">
+                    Budget kamu:
+                </label>
+
+                <input
+                    type="text"
+                    id="budgetInput"
+                    placeholder="Contoh: 3.000.000"
+                    inputmode="numeric"
+                    oninput="formatRupiah(this)"
+                >
+
+                <button onclick="cekBudget()">
+                    Cek Budget
+                </button>
+
+            </div>
+
+
+            <div id="hasilBudget">
+
+                <p>
+                    Silakan masukkan budget kamu.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             RAKITAN SAYA
+        ========================================= -->
+
+        <section class="hasil">
+
+            <h2>
+                🛠️ Rakitan Saya
+            </h2>
+
+
+            <div id="daftarRakitan">
+
+                <p>
+                    Belum ada komponen yang dipilih.
+                </p>
+
+            </div>
+
+
+            <hr>
+
+
+            <h2>
+                Total:
+                <span id="totalHarga">
+                    Rp0
+                </span>
+            </h2>
+
+
+            <button
+                class="btn-reset"
+                onclick="resetRakitan()"
+            >
+                🔄 Reset Rakitan
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ========================================
+         JAVASCRIPT
+    ========================================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
